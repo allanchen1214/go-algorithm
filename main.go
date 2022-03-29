@@ -14,4 +14,12 @@ func main() {
 
 	index = BinarySearchForLoop(arr, target)
 	fmt.Println(index)
+
+	fmt.Println("----")
+
+	arr = []int{100, 201, 333, 754, 65, 21}
+	sum := 955
+	index1, index2 := TwoSum(arr, sum)
+	fmt.Printf("index1: %d, index2: %d\n", index1, index2)
+
 }
