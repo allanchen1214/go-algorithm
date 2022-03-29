@@ -28,4 +28,15 @@ func main() {
 	prefix := LongestCommonPrefix(strArr)
 	fmt.Println(prefix)
 
+	fmt.Println("----")
+	str1 := "abcadf"
+	str2 := "acbad"
+	subStr := TwoStringLongestCommonSubString(str1, str2)
+	fmt.Println(subStr)
+
+	str1 = "abcadffeax12xx"
+	str2 = "acadffeat"
+	subStr = TwoStringLongestCommonSubString(str1, str2)
+	fmt.Println(subStr)
+
 }
