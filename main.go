@@ -22,4 +22,10 @@ func main() {
 	index1, index2 := TwoSum(arr, sum)
 	fmt.Printf("index1: %d, index2: %d\n", index1, index2)
 
+	fmt.Println("----")
+
+	strArr := []string{"flower", "flow", "flight"}
+	prefix := LongestCommonPrefix(strArr)
+	fmt.Println(prefix)
+
 }
