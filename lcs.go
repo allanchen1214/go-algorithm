@@ -35,19 +35,17 @@ func TwoStringLongestCommonSubString(str1, str2 string) string {
 		fmt.Println()
 	}
 
-	row := 0
-	col := 0
-	max := dp[row][col]
+	pos := 0
+	n := dp[pos][0]
 	for i, v1 := range dp {
-		for j, v2 := range v1 {
-			if v2 > max {
-				row = i
-				col = j
-				max = v2
+		for _, v2 := range v1 {
+			if v2 > n {
+				pos = i
+				n = v2
 			}
 		}
 	}
 	//	fmt.Printf("row: %d, col:%d, max: %d\n", row, col, max)
-	return str1[row-max+1 : row+1]
+	return str1[pos-n+1 : pos+1]
 
 }
