@@ -4,6 +4,23 @@ import (
 	"fmt"
 )
 
+func BubbleSort(arr []int) {
+	l := len(arr)
+	var i, j int
+	for i = 0; i < l; i++ {
+		for j = 0; j < l-i-1; j++ {
+			//fmt.Printf("%d\t%d\n", i, j+1)
+			if arr[j] > arr[j+1] {
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+			}
+		}
+	}
+
+	for _, v := range arr {
+		fmt.Printf("%v\t", v)
+	}
+}
+
 //排序思想：
 //首先从数列的右边开始往左边找，我们设这个下标为 i，也就是进行减减操作（i--），找到第 1 个比基准数小的值，让它与基准值交换；
 //接着从左边开始往右边找，设这个下标为 j，然后执行加加操作（j++），找到第 1 个比基准数大的值，让它与基准值交换；
