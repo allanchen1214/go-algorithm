@@ -29,6 +29,7 @@ func main() {
 	fmt.Println(prefix)
 
 	fmt.Println("----")
+
 	str1 := "abcadf"
 	str2 := "acbad"
 	subStr := TwoStringLongestCommonSubString(str1, str2)
@@ -38,5 +39,10 @@ func main() {
 	str2 = "acadffeat"
 	subStr = TwoStringLongestCommonSubString(str1, str2)
 	fmt.Println(subStr)
+
+	fmt.Println("----")
+
+	arr = []int{100, 201, 333, 754, 65, 21, 100, 5, 300000, 555555, 44, 34567, 2, 99}
+	QuickSort(arr)
 
 }
