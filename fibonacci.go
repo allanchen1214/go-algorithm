@@ -19,12 +19,12 @@ func Fibonacci_optimize(n int) int {
 	}
 
 	pre := 1
-	ret := 1
+	fn := 1
 	var tmp int
 	for i := 2; i < n; i++ {
-		tmp = ret
-		ret = ret + pre
+		tmp = fn
+		fn = pre + fn
 		pre = tmp
 	}
-	return ret
+	return fn
 }
