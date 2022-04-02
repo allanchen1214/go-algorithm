@@ -43,6 +43,8 @@ func main() {
 	subStr = TwoStringLongestCommonSubString(str1, str2)
 	fmt.Println(subStr)
 
+	fmt.Println("----")
+
 	arr = []int{100, 201, 333, 754, 65, 21, 100, 5, 300000, 555555, 44, 34567, 2, 99}
 	QuickSort(arr)
 	fmt.Println()
@@ -65,5 +67,7 @@ func main() {
 		fmt.Println(time.Now().Sub(now).Milliseconds())
 	}()
 	fmt.Println(fn)
+
+	fmt.Println("----")
 
 }
