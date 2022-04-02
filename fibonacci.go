@@ -1,5 +1,6 @@
 package main
 
+// 这个方法性能超慢
 func Fibonacci(n int) int {
 	if n == 0 {
 		return 0

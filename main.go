@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	//	fmt.Println("Golang algorithm tutorials")
@@ -49,9 +52,18 @@ func main() {
 
 	fmt.Println("----")
 
-	fn := Fibonacci(5)
-	fmt.Println(fn)
-	fn = Fibonacci_optimize(5)
+	//	now := time.Now()
+	//	fn := Fibonacci(50)
+	//	defer func() {
+	//		fmt.Println(time.Now().Sub(now).Milliseconds())
+	//	}()
+	//	fmt.Println(fn)
+
+	now := time.Now()
+	fn := Fibonacci_optimize(100)
+	defer func() {
+		fmt.Println(time.Now().Sub(now).Milliseconds())
+	}()
 	fmt.Println(fn)
 
 }
