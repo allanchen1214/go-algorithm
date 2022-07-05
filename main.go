@@ -7,6 +7,23 @@ import (
 
 func main() {
 	//	fmt.Println("Golang algorithm tutorials")
+	var n1, n2, n3, n4, n5, n6 Node
+	n6.Val = 6
+	n5.Val = 5
+	n3.Val = 3
+	n3.Left = &n5
+	n3.Right = &n6
+	n1.Val = 1
+	n1.Right = &n3
+	n4.Val = 4
+	n2.Val = 2
+	n2.Right = &n4
+	n1.Left = &n2
+
+	PrintBinaryTree1(&n1)
+	fmt.Println()
+
+	fmt.Println("----")
 
 	arr := []int{2, 5, 7, 9, 10, 222, 2345, 12345, 22222, 23456, 99999}
 	target := 99999
